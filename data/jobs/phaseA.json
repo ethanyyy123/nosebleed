@@ -1,0 +1,314 @@
+[
+{
+"label": "GPRP",
+"sequence": "GPRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRP",
+"sequence": "GPRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRP",
+"sequence": "GPRP",
+"shell": 6.0,
+"seed": 3,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRP",
+"sequence": "GPRP",
+"shell": 6.0,
+"seed": 4,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRP",
+"sequence": "GPRP",
+"shell": 6.0,
+"seed": 5,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRP",
+"sequence": "GPRP",
+"shell": 6.0,
+"seed": 6,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPR",
+"sequence": "GPR",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPR",
+"sequence": "GPR",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPR",
+"sequence": "GPR",
+"shell": 6.0,
+"seed": 3,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRP",
+"sequence": "GPRP",
+"shell": 7.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRP_D364A",
+"sequence": "GPRP",
+"shell": 7.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2,
+"rec_mut": {
+"364": "A"
+}
+},
+{
+"label": "GPRP_D364H",
+"sequence": "GPRP",
+"shell": 7.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2,
+"rec_mut": {
+"364": "H"
+}
+},
+{
+"label": "GPRP_D364V",
+"sequence": "GPRP",
+"shell": 7.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2,
+"rec_mut": {
+"364": "V"
+}
+},
+{
+"label": "GPRP",
+"sequence": "GPRP",
+"shell": 7.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRP_D364A",
+"sequence": "GPRP",
+"shell": 7.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2,
+"rec_mut": {
+"364": "A"
+}
+},
+{
+"label": "GPRP_D364H",
+"sequence": "GPRP",
+"shell": 7.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2,
+"rec_mut": {
+"364": "H"
+}
+},
+{
+"label": "GPRP_D364V",
+"sequence": "GPRP",
+"shell": 7.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2,
+"rec_mut": {
+"364": "V"
+}
+},
+{
+"label": "GPRP",
+"sequence": "GPRP",
+"shell": 7.0,
+"seed": 3,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRP_D364A",
+"sequence": "GPRP",
+"shell": 7.0,
+"seed": 3,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2,
+"rec_mut": {
+"364": "A"
+}
+},
+{
+"label": "GPRP_D364H",
+"sequence": "GPRP",
+"shell": 7.0,
+"seed": 3,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2,
+"rec_mut": {
+"364": "H"
+}
+},
+{
+"label": "GPRP_D364V",
+"sequence": "GPRP",
+"shell": 7.0,
+"seed": 3,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2,
+"rec_mut": {
+"364": "V"
+}
+},
+{
+"label": "GPRP_F293A",
+"sequence": "GPRP",
+"shell": 7.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2,
+"rec_mut": {
+"293": "A"
+}
+},
+{
+"label": "GPRP_S300A",
+"sequence": "GPRP",
+"shell": 7.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2,
+"rec_mut": {
+"300": "A"
+}
+},
+{
+"label": "GPRP_M336A",
+"sequence": "GPRP",
+"shell": 7.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2,
+"rec_mut": {
+"336": "A"
+}
+},
+{
+"label": "GPRP_N337A",
+"sequence": "GPRP",
+"shell": 7.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2,
+"rec_mut": {
+"337": "A"
+}
+},
+{
+"label": "GPRP_F293A",
+"sequence": "GPRP",
+"shell": 7.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2,
+"rec_mut": {
+"293": "A"
+}
+},
+{
+"label": "GPRP_S300A",
+"sequence": "GPRP",
+"shell": 7.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2,
+"rec_mut": {
+"300": "A"
+}
+},
+{
+"label": "GPRP_M336A",
+"sequence": "GPRP",
+"shell": 7.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2,
+"rec_mut": {
+"336": "A"
+}
+},
+{
+"label": "GPRP_N337A",
+"sequence": "GPRP",
+"shell": 7.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2,
+"rec_mut": {
+"337": "A"
+}
+}
+]

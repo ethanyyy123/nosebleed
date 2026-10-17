@@ -1,0 +1,30 @@
+pdb	title	peptide_sequences	n_peptide_chains	hetero
+1FZA	Crystal Structure Of Fibrinogen Fragment D		0	CA/NAG
+1FZB	Crystal Structure Of Crosslinked Fragment D	GLY-PRO-ARG-PRO	2	CA/NAG
+1FZC	Crystal Structure Of Fragment Double-D From Human Fibrin With Two Different Bound Ligands	GLY-HIS-ARG-PRO; GLY-PRO-ARG-PRO	4	CA/MAN/NAG
+1FZE	Crystal Structure Of Fragment Double-D From Human Fibrin		0	CA/NAG
+1FZF	Crystal Structure Of Fragment Double-D From Human Fibrin With The Peptide Ligand Gly-His-Arg-Pro-Amide	GLY-HIS-ARG-PRO	4	CA/NAG
+1FZG	Crystal Structure Of Fragment D From Human Fibrinogen With The Peptide Ligand Gly-His-Arg-Pro-Amide	GLY-HIS-ARG-PRO	4	CA/NAG
+1RE3	Crystal Structure Of Fragment D Of Bbetad398A Fibrinogen With The Peptide Ligand Gly-His-Arg-Pro-Amide	GLY-HIS-ARG-PRO	2	CA/NAG
+1LTJ	Crystal Structure Of Recombinant Human Fibrinogen Fragment D With The Peptide Ligands Gly-Pro-Arg-Pro-Amide And Gly-His-Arg-Pro-Amide	GLY-HIS-ARG-PRO; GLY-PRO-ARG-PRO	4	CA/FUC/NAG
+2Q9I	Crystal Structure Of D-Dimer From Human Fibrin Complexed With Met-His- Arg-Pro-Tyr-Amide.	GLY-HIS-ARG-PRO; MET-HIS-ARG-PRO-TYR	4	CA/NAG
+2HLO	Crystal Structure Of Fragment D-Dimer From Human Fibrin Complexed With Gly-Hydroxypro-Arg-Pro-Amide	GLY-HYP-ARG-PRO-NH2	2	CA/HYP/NAG/NDG/NH2
+2HOD	Crystal Structure Of Fragment D From Human Fibrinogen Complexed With Gly-Hydroxypro-Arg-Pro-Amide	GLY-HYP-ARG-PRO-NH2	8	CA/HYP/NAG/NH2
+2OYH	Crystal Structure Of Fragment D Of Gammad298,301A Fibrinogen With The Peptide Ligand Gly-His-Arg-Pro-Amide	GLY-HIS-ARG-PRO	4	CA/FUC/NAG
+2OYI	Crystal Structure Of Fragment D Of Gammad298,301A Fibrinogen With The Peptide Ligand Gly-Pro-Arg-Pro-Amide	GLY-PRO-ARG-PRO	4	CA/FUC/NAG
+3GHG	Crystal Structure Of Human Fibrinogen	GLY-HIS-ARG-PRO; GLY-PRO-ARG-PRO	8	BMA/CA/GAL/MAN/NAG/SIA
+1N86	Crystal Structure Of Human D-Dimer From Cross-Linked Fibrin Complexed With Gpr And Ghrpldk Peptide Ligands.	GLY-HIS-ARG-PRO-LEU-ASP-LYS; GLY-PRO-ARG	4	CA/MAN/NDG
+3E1I	Crystal Structure Of Bbetad432A Variant Fibrinogen Fragment D With The Peptide Ligand Gly-His-Arg-Pro-Amide	GLY-HIS-ARG-PRO-NH2	2	CA/NAG
+3H32	Crystal Structure Of D-Dimer From Human Fibrin Complexed With Gly-His- Arg-Pro-Tyr-Amide	GLY-HIS-ARG-PRO-TYR	2	CA/GAL/MAN/NAG/SIA
+3HUS	Crystal Structure Of Recombinant Gamma N308K Fibrinogen Fragment D With The Peptide Ligand Gly-Pro-Arg-Pro-Amide	GLY-PRO-ARG-PRO	4	CA/FUC/NAG
+2FFD	"Fibrinogen Fragment D With ""A"" Knob Peptide Mimic Gprvve"	GLY-PRO-ARG-VAL-VAL-GLU	4	CA/FUC/NAG
+2Z4E	Crystal Structure Of D-Dimer From Human Fibrin Complexed With Gly-His- Arg-Pro-Tyr-Amide	GLY-HIS-ARG-PRO; GLY-HIS-ARG-PRO-TYR	4	CA/NAG
+3BVH	Crystal Structure Of Recombinant Gammad364A Fibrinogen Fragment D With The Peptide Ligand Gly-Pro-Arg-Pro-Amide	GLY-PRO-ARG-PRO	4	CA/FUC/NAG
+2H43	Crystal Structure Of Human Fragment D Complexed With Ala-His-Arg-Pro- Amide	ALA-HIS-ARG-PRO-NH2	2	CA/NAG/NDG/NH2
+2HPC	Crystal Structure Of Fragment D From Human Fibrinogen Complexed With Gly-Pro-Arg-Pro-Amide.	GLY-PRO-ARG-PRO-NH2	8	CA/NAG/NH2
+1LWU	Crystal Structure Of Fragment D From Lamprey Fibrinogen Complexed With The Peptide Gly-His-Arg-Pro-Amide	GLY-HIS-ARG-PRO-NH2	4	BMA/CA/GAL/MAN/NAG/NDG/NH2
+2FIB	Recombinant Human Gamma-Fibrinogen Carboxyl Terminal Fragment (Residues 143-411) Complexed To The Peptide Gly-Pro-Arg-Pro At Ph 6.0	GLY-PRO-ARG-PRO	1	CA
+3FIB	Recombinant Human Gamma-Fibrinogen Carboxyl Terminal Fragment (Residues 143-411) Bound To Calcium At Ph 6.0: A Further Refinement Of Pdb Entry 1Fib, And Differs From 1Fib By The Modelling Of A Cis Peptide Bond Between Residues K338 And C339		0	CA
+1FIB	Recombinant Human Gamma-Fibrinogen Carboxyl Terminal Fragment (Residues 143-411) Bound To Calcium At Ph 6.0		0	CA
+1FID	Structure Of Human Gamma Fibrinogen 30 Kd Carboxyl Terminal Fragment		0	CA
+1M1J	Crystal Structure Of Native Chicken Fibrinogen With Two Different Bound Ligands	GLY-HIS-ARG-PRO; GLY-PRO-ARG-PRO	4	CA/NAG/NDG

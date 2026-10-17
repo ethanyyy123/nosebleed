@@ -1,0 +1,11 @@
+id,statement,value,units,system,source,provenance,verified_against_primary_text
+L1,GPRP binding to fibrinogen/fragment D (association constant),5e4,1/M (Ka),fibrinogen or fragment D,"Laudano & Doolittle 1978 PNAS 75:3085",web-search summary of abstract,FALSE
+L2,GPR (tripeptide) binds less tightly than GPRP,qualitative,,fibrinogen,"Laudano & Doolittle 1978 PNAS 75:3085",web-search summary of abstract,FALSE
+L3,GPRP KD for hole a in cross-linked double-D,~25,uM,double-D,"Asquith et al. 2022 Blood Adv 6:4015",web-search summary,FALSE
+L4,GPRP KD for larger fibrin fragments,~5.8,uM,larger fibrin fragments,"Asquith et al. 2022 Blood Adv 6:4015",web-search summary,FALSE
+L5,GPRP binds ~4x tighter than GPRVVE,~4,fold,fragment D (SPR),"Stabenfeldt et al. 2010 Blood 116:1352",web-search summary,FALSE
+L6,GPRPFPAC binds with ~10x faster association than earlier knob mimics (SPR kon),~10,fold,fragment D (SPR),"Stabenfeldt et al. 2010 Blood 116:1352",web-search summary of abstract,FALSE
+L7,gammaD364A weakens GPRP binding (partial plasmin protection),qualitative (weaker than WT),,recombinant fragment D,"Bowley et al. 2008 Biochemistry 47:8607",web-search summary of abstract,FALSE
+L8,gammaD364H and gammaD364V show no GPRP protection (no detectable binding in that assay),qualitative (abolished),,recombinant fragment D,"Bowley et al. 2008 Biochemistry 47:8607",web-search summary of abstract,FALSE
+L9,gammaD364A crystal structure retains near-normal A:a contacts with GPRP (PDB 3BVH 2.6 A),structural,,fragment D,"Bowley et al. 2008; PDB 3BVH",web-search summary + PDB header verified locally for title/ligand,PARTIAL
+L10,GPRP/GHRP crystal structures in holes a/b (PDB 1FZC etc.),structural,,double-D,"Everse et al. 1998 Biochemistry 37:8637; PDB 1FZC",PDB header parsed locally,TRUE (header only)

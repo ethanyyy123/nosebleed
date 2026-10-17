@@ -1,0 +1,13 @@
+12 jobs, 12 to run on 4 workers
+[1/12 767s] PILOTlong_GPRP__s6__r3: ok  dG=-55.1  rmsd=1.11  766.5s
+[2/12 772s] PILOTlong_GPRP__s6__r2: ok  dG=-55.4  rmsd=1.21  771.4s
+[3/12 776s] PILOTlong_GPRP__s6__r1: ok  dG=-56.0  rmsd=1.19  775.2s
+[4/12 777s] PILOTlong_GPRP__s6__r4: ok  dG=-55.4  rmsd=1.24  777.0s
+[5/12 1083s] PILOT_GPKP__s6__r1: ok  dG=-45.2  rmsd=2.06  316.1s
+[6/12 1087s] PILOT_GPKP__s6__r2: ok  dG=-45.6  rmsd=1.20  315.0s
+[7/12 1095s] PILOT_GPWP__s6__r2: ok  dG=-29.8  rmsd=2.17  317.3s
+[8/12 1095s] PILOT_GPWP__s6__r1: ok  dG=-31.6  rmsd=1.77  319.6s
+[9/12 1378s] PILOT_GADP__s6__r1: ok  dG=-21.0  rmsd=3.56  295.3s
+[10/12 1386s] PILOT_GADP__s6__r2: ok  dG=-24.6  rmsd=2.18  299.7s
+[11/12 1408s] PILOT_GPRP__s6__r2: ok  dG=-55.9  rmsd=1.17  313.2s
+[12/12 1410s] PILOT_GPRP__s6__r1: ok  dG=-54.8  rmsd=1.12  315.0s

@@ -1,0 +1,11 @@
+# Python 3.13 environment used for the study (CPU only)
+numpy>=2.0
+scipy>=1.14
+pandas>=2.2
+matplotlib>=3.9
+biopython>=1.84
+openmm>=8.2
+pdbfixer>=1.9
+mdtraj>=1.10
+rdkit>=2024.9
+# system packages (apt): autodock-vina openbabel texlive-latex-recommended texlive-latex-extra

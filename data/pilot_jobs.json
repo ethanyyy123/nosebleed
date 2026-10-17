@@ -1,0 +1,110 @@
+[
+ {
+  "label": "PILOTlong_GPRP",
+  "sequence": "GPRP",
+  "shell": 6.0,
+  "seed": 1,
+  "equil_ps": 30,
+  "prod_ps": 300,
+  "anneal_ps": 2
+ },
+ {
+  "label": "PILOTlong_GPRP",
+  "sequence": "GPRP",
+  "shell": 6.0,
+  "seed": 2,
+  "equil_ps": 30,
+  "prod_ps": 300,
+  "anneal_ps": 2
+ },
+ {
+  "label": "PILOTlong_GPRP",
+  "sequence": "GPRP",
+  "shell": 6.0,
+  "seed": 3,
+  "equil_ps": 30,
+  "prod_ps": 300,
+  "anneal_ps": 2
+ },
+ {
+  "label": "PILOTlong_GPRP",
+  "sequence": "GPRP",
+  "shell": 6.0,
+  "seed": 4,
+  "equil_ps": 30,
+  "prod_ps": 300,
+  "anneal_ps": 2
+ },
+ {
+  "label": "PILOT_GPKP",
+  "sequence": "GPKP",
+  "shell": 6.0,
+  "seed": 1,
+  "equil_ps": 30,
+  "prod_ps": 100,
+  "anneal_ps": 2
+ },
+ {
+  "label": "PILOT_GPKP",
+  "sequence": "GPKP",
+  "shell": 6.0,
+  "seed": 2,
+  "equil_ps": 30,
+  "prod_ps": 100,
+  "anneal_ps": 2
+ },
+ {
+  "label": "PILOT_GPWP",
+  "sequence": "GPWP",
+  "shell": 6.0,
+  "seed": 1,
+  "equil_ps": 30,
+  "prod_ps": 100,
+  "anneal_ps": 2
+ },
+ {
+  "label": "PILOT_GPWP",
+  "sequence": "GPWP",
+  "shell": 6.0,
+  "seed": 2,
+  "equil_ps": 30,
+  "prod_ps": 100,
+  "anneal_ps": 2
+ },
+ {
+  "label": "PILOT_GADP",
+  "sequence": "GADP",
+  "shell": 6.0,
+  "seed": 1,
+  "equil_ps": 30,
+  "prod_ps": 100,
+  "anneal_ps": 2
+ },
+ {
+  "label": "PILOT_GADP",
+  "sequence": "GADP",
+  "shell": 6.0,
+  "seed": 2,
+  "equil_ps": 30,
+  "prod_ps": 100,
+  "anneal_ps": 2
+ },
+ {
+  "label": "PILOT_GPRP",
+  "sequence": "GPRP",
+  "shell": 6.0,
+  "seed": 1,
+  "equil_ps": 30,
+  "prod_ps": 100,
+  "anneal_ps": 2
+ },
+ {
+  "label": "PILOT_GPRP",
+  "sequence": "GPRP",
+  "shell": 6.0,
+  "seed": 2,
+  "equil_ps": 30,
+  "prod_ps": 100,
+  "anneal_ps": 2
+ }
+]

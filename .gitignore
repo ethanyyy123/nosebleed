@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+data/_tmp_*
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+data/trajectories/*.npy

@@ -1,0 +1,1370 @@
+[
+{
+"label": "GPRA",
+"sequence": "GPRA",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRA",
+"sequence": "GPRA",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRC",
+"sequence": "GPRC",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRC",
+"sequence": "GPRC",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRD",
+"sequence": "GPRD",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRD",
+"sequence": "GPRD",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRE",
+"sequence": "GPRE",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRE",
+"sequence": "GPRE",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRF",
+"sequence": "GPRF",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRF",
+"sequence": "GPRF",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRG",
+"sequence": "GPRG",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRG",
+"sequence": "GPRG",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRH",
+"sequence": "GPRH",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRH",
+"sequence": "GPRH",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRI",
+"sequence": "GPRI",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRI",
+"sequence": "GPRI",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRK",
+"sequence": "GPRK",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRK",
+"sequence": "GPRK",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRL",
+"sequence": "GPRL",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRL",
+"sequence": "GPRL",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRM",
+"sequence": "GPRM",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRM",
+"sequence": "GPRM",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRN",
+"sequence": "GPRN",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRN",
+"sequence": "GPRN",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRQ",
+"sequence": "GPRQ",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRQ",
+"sequence": "GPRQ",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRR",
+"sequence": "GPRR",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRR",
+"sequence": "GPRR",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRS",
+"sequence": "GPRS",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRS",
+"sequence": "GPRS",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRT",
+"sequence": "GPRT",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRT",
+"sequence": "GPRT",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRV",
+"sequence": "GPRV",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRV",
+"sequence": "GPRV",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRW",
+"sequence": "GPRW",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRW",
+"sequence": "GPRW",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRY",
+"sequence": "GPRY",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPRY",
+"sequence": "GPRY",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GARP",
+"sequence": "GARP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GARP",
+"sequence": "GARP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GCRP",
+"sequence": "GCRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GCRP",
+"sequence": "GCRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GDRP",
+"sequence": "GDRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GDRP",
+"sequence": "GDRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GERP",
+"sequence": "GERP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GERP",
+"sequence": "GERP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GFRP",
+"sequence": "GFRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GFRP",
+"sequence": "GFRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GGRP",
+"sequence": "GGRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GGRP",
+"sequence": "GGRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GHRP",
+"sequence": "GHRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GHRP",
+"sequence": "GHRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GIRP",
+"sequence": "GIRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GIRP",
+"sequence": "GIRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GKRP",
+"sequence": "GKRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GKRP",
+"sequence": "GKRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GLRP",
+"sequence": "GLRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GLRP",
+"sequence": "GLRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GMRP",
+"sequence": "GMRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GMRP",
+"sequence": "GMRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GNRP",
+"sequence": "GNRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GNRP",
+"sequence": "GNRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GQRP",
+"sequence": "GQRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GQRP",
+"sequence": "GQRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GRRP",
+"sequence": "GRRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GRRP",
+"sequence": "GRRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GSRP",
+"sequence": "GSRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GSRP",
+"sequence": "GSRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GTRP",
+"sequence": "GTRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GTRP",
+"sequence": "GTRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GVRP",
+"sequence": "GVRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GVRP",
+"sequence": "GVRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GWRP",
+"sequence": "GWRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GWRP",
+"sequence": "GWRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GYRP",
+"sequence": "GYRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GYRP",
+"sequence": "GYRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPAP",
+"sequence": "GPAP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPAP",
+"sequence": "GPAP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPCP",
+"sequence": "GPCP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPCP",
+"sequence": "GPCP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPDP",
+"sequence": "GPDP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPDP",
+"sequence": "GPDP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPEP",
+"sequence": "GPEP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPEP",
+"sequence": "GPEP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPFP",
+"sequence": "GPFP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPFP",
+"sequence": "GPFP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPGP",
+"sequence": "GPGP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPGP",
+"sequence": "GPGP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPHP",
+"sequence": "GPHP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPHP",
+"sequence": "GPHP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPIP",
+"sequence": "GPIP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPIP",
+"sequence": "GPIP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPKP",
+"sequence": "GPKP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPKP",
+"sequence": "GPKP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPLP",
+"sequence": "GPLP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPLP",
+"sequence": "GPLP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPMP",
+"sequence": "GPMP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPMP",
+"sequence": "GPMP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPNP",
+"sequence": "GPNP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPNP",
+"sequence": "GPNP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPPP",
+"sequence": "GPPP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPPP",
+"sequence": "GPPP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPQP",
+"sequence": "GPQP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPQP",
+"sequence": "GPQP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPSP",
+"sequence": "GPSP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPSP",
+"sequence": "GPSP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPTP",
+"sequence": "GPTP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPTP",
+"sequence": "GPTP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPVP",
+"sequence": "GPVP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPVP",
+"sequence": "GPVP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPWP",
+"sequence": "GPWP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPWP",
+"sequence": "GPWP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPYP",
+"sequence": "GPYP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "GPYP",
+"sequence": "GPYP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "APRP",
+"sequence": "APRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "APRP",
+"sequence": "APRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "CPRP",
+"sequence": "CPRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "CPRP",
+"sequence": "CPRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "DPRP",
+"sequence": "DPRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "DPRP",
+"sequence": "DPRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "EPRP",
+"sequence": "EPRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "EPRP",
+"sequence": "EPRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "FPRP",
+"sequence": "FPRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "FPRP",
+"sequence": "FPRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "HPRP",
+"sequence": "HPRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "HPRP",
+"sequence": "HPRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "IPRP",
+"sequence": "IPRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "IPRP",
+"sequence": "IPRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "KPRP",
+"sequence": "KPRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "KPRP",
+"sequence": "KPRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "LPRP",
+"sequence": "LPRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "LPRP",
+"sequence": "LPRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "MPRP",
+"sequence": "MPRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "MPRP",
+"sequence": "MPRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "NPRP",
+"sequence": "NPRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "NPRP",
+"sequence": "NPRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "PPRP",
+"sequence": "PPRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "PPRP",
+"sequence": "PPRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "QPRP",
+"sequence": "QPRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "QPRP",
+"sequence": "QPRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "RPRP",
+"sequence": "RPRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "RPRP",
+"sequence": "RPRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "SPRP",
+"sequence": "SPRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "SPRP",
+"sequence": "SPRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "TPRP",
+"sequence": "TPRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "TPRP",
+"sequence": "TPRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "VPRP",
+"sequence": "VPRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "VPRP",
+"sequence": "VPRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "WPRP",
+"sequence": "WPRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "WPRP",
+"sequence": "WPRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "YPRP",
+"sequence": "YPRP",
+"shell": 6.0,
+"seed": 1,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+},
+{
+"label": "YPRP",
+"sequence": "YPRP",
+"shell": 6.0,
+"seed": 2,
+"equil_ps": 100,
+"prod_ps": 100,
+"anneal_ps": 2
+}
+]
