@@ -261,7 +261,14 @@ def build_model(sequence="GPRP", shell=10.0, rec_mutations=None, ph=7.4, pdb_id=
 # --------------------------------------------------------------------------
 # force field / simulation
 # --------------------------------------------------------------------------
-def make_system(topology, hmr=True):
+def make_system(topology, hmr=True, solute_eps=1.0, gb="obc2"):
+    """gb='obc2' -> native GBSAOBCForce (group 2); gb='gbn2' -> OpenMM's GBn2
+    CustomGBForce (slow; used only for single-point rescoring, total energy)."""
+    if gb == "gbn2":
+        ff = app.ForceField(*FF_FILES, "implicit/gbn2.xml")
+        return ff.createSystem(topology, nonbondedMethod=app.NoCutoff,
+                               constraints=app.HBonds, soluteDielectric=solute_eps,
+                               solventDielectric=78.5)
     ff = app.ForceField(*FF_FILES)
     kw = dict(nonbondedMethod=app.NoCutoff, constraints=app.HBonds)
     if hmr:
@@ -269,14 +276,14 @@ def make_system(topology, hmr=True):
     system = ff.createSystem(topology, **kw)
     nb = next(f for f in system.getForces() if isinstance(f, mm.NonbondedForce))
     nb.setReactionFieldDielectric(1.0)
-    gb = mm.GBSAOBCForce()
-    gb.setNonbondedMethod(mm.GBSAOBCForce.NoCutoff)
-    gb.setSoluteDielectric(1.0)
-    gb.setSolventDielectric(78.5)
-    gb.setForceGroup(2)             # group 0 = gas phase, 1 = restraints, 2 = GB+SA
-    for i, (r, s) in enumerate(GBSAOBC2Force.getStandardParameters(topology)):
-        gb.addParticle(nb.getParticleParameters(i)[0], r, s)
-    system.addForce(gb)
+    gbf = mm.GBSAOBCForce()
+    gbf.setNonbondedMethod(mm.GBSAOBCForce.NoCutoff)
+    gbf.setSoluteDielectric(solute_eps)
+    gbf.setSolventDielectric(78.5)
+    gbf.setForceGroup(2)            # group 0 = gas phase, 1 = restraints, 2 = GB+SA
+    for i, (r, sc) in enumerate(GBSAOBC2Force.getStandardParameters(topology)):
+        gbf.addParticle(nb.getParticleParameters(i)[0], r, sc)
+    system.addForce(gbf)
     return system
 
 
@@ -344,7 +351,8 @@ def run_md(model, seed, equil_ps=80, prod_ps=200, save_ps=5, threads=1,
 # single-trajectory MM/GBSA (same OBC-II model as the dynamics)
 # --------------------------------------------------------------------------
 class GBSAScorer:
-    def __init__(self, model):
+    def __init__(self, model, solute_eps=1.0, gb="obc2"):
+        self.gb = gb
         top, n = model.topology, model.topology.getNumAtoms()
         self.sets = {"cx": list(range(n)), "rc": list(range(model.n_rec)),
                      "lg": list(range(model.n_rec, n))}
@@ -353,7 +361,8 @@ class GBSAScorer:
             mod = app.Modeller(top, model.positions)
             keep = set(ids)
             mod.delete([a for a in mod.topology.atoms() if a.index not in keep])
-            self.ctx[key] = mm.Context(make_system(mod.topology, hmr=False),
+            self.ctx[key] = mm.Context(make_system(mod.topology, hmr=False,
+                                                   solute_eps=solute_eps, gb=gb),
                                        mm.VerletIntegrator(0.001),
                                        mm.Platform.getPlatformByName("CPU"), {"Threads": "1"})
 
@@ -363,6 +372,11 @@ class GBSAScorer:
         for key, ids in self.sets.items():
             c = self.ctx[key]
             c.setPositions(frame_nm[ids])
+            if self.gb == "gbn2":                      # single group: total only
+                e = c.getState(getEnergy=True).getPotentialEnergy().value_in_unit(
+                    unit.kilocalories_per_mole)
+                out[key] = (e, 0.0)
+                continue
             g = c.getState(getEnergy=True, groups={0}).getPotentialEnergy()
             w = c.getState(getEnergy=True, groups={2}).getPotentialEnergy()
             out[key] = (g.value_in_unit(unit.kilocalories_per_mole),

@@ -1,5 +1,55 @@
 # Target venue and submission requirements
 
+**Decision (2026-10-19, superseding the original JEI pick below the line):**
+the user is an undergraduate, without a confirmed PhD-holding faculty
+mentor/sponsor at the time of writing. That rules out JEI (middle/high-school
+only, which the user also explicitly doesn't want), and rules out venues that
+require a mentor's signature before submission (JYI, SIAM's SIURO) unless a
+mentor is lined up later. The manuscript is therefore being written for:
+
+| Role | Venue | Why |
+|---|---|---|
+| **Primary** | [Reinvention: an International Journal of Undergraduate Research](https://reinventionjournal.org/) (Warwick/Oxford Brookes) | Confirmed **double-blind** peer review; open to undergraduates (or <6 months post-graduation) **at any institution, any country**; **no submission/publication fee**; **no mentor signature required**; "any subject" scope. Main risk: its visible recent issues skew social-science/humanities, so a quantitative MD/biophysics paper's topical fit with its editorial board is unconfirmed -- flagged for the user to judge, not something I can resolve from here. |
+| **Backup (free, no mentor, broader science scope)** | [Journal of Young Investigators (JYI)](https://www.jyi.org/) | Undergrad-only, broad science scope (fits a computational-biology paper better on its face), no fee apparent. **Requires an Advisor Approval Form from a PhD-holding or faculty mentor** -- only usable once the user has one. Double-blind status unconfirmed (review is by trained undergraduate editors + a PhD mentor, which is not the same guarantee). |
+| **Backup (fee-based, no student/mentor restriction)** | [PeerJ](https://peerj.com/about/editorial-criteria) (Biological/Biochemistry & Molecular Biology sections) | Judges *soundness, not novelty*; no restriction on author status, so no mentor needed. **Real cost**: reported APC figures ranged $1,195-$2,155 per article, or a lifetime membership from ~$599-755/author; low-income-country fee waivers exist. Only sensible if the user can cover or waive the fee. |
+| **Preprint (no review, free)** | bioRxiv | Establishes a public timestamp independent of which journal is chosen; does not substitute for peer review. |
+
+**Why not the SIAM Undergraduate Research Online (SIURO):** scope (applied/
+computational math) fits this project well, but it requires a sponsor/adviser
+letter, which has the same mentor problem as JYI/JEI -- revisit if a mentor is
+found.
+
+**Manuscript is being drafted to Reinvention's format**, since it is the only
+venue above that is simultaneously free, double-blind, and needs no mentor
+signature today. If a mentor becomes available, reformatting to JYI's rules is
+a lighter lift than clearing PeerJ's fee or Reinvention's uncertain topical fit.
+
+## Reinvention: requirements (from search-result summaries of its own pages;
+**[VERIFY]** against the live [style guide PDF](https://warwick.ac.uk/fac/cross_fac/iatl/research/reinvention/styleguide/reinvention_style_guide_version_2.2_corrections.pdf) and [Information for Authors](https://reinventionjournal.org/index.php/reinvention/information-for-authors) before submitting -- not opened directly, same sandbox limitation as below)
+
+* **Length:** research articles 2,000-5,000 words (body text; excludes abstract,
+  bibliography, appendices).
+* **Abstract:** 100-200 words, plus ~6 keywords.
+* **Format:** Arial 11pt, double-spaced, >=2.5 cm margins **[VERIFY, one source
+  was an archived page]**.
+* **Front matter order:** page 1 = all authors' names/department/institution/
+  address/email; page 2 = title page; then abstract; then main text; then
+  acknowledgements, appendices, glossary, references (in that order).
+* **References:** Reinvention's own variant of Harvard (author-date in-text,
+  reference list with DOI/URL); exact variant rules **[VERIFY]** against the
+  style guide -- a standard author-date Harvard format is used as a safe
+  default here.
+* **Fees:** none found; files accepted as Word/OpenOffice/RTF.
+* **Timeline:** one source warned of a 3-6 month wait before a submission is
+  even read (volunteer-run, like JEI/JYI).
+* **Eligibility check:** the submission checklist asks whether the author is
+  "an undergraduate or graduated within the last 6 months" -- answer honestly
+  at submission time.
+
+---
+
+## Original (2026-10-17) pick, superseded above at the user's request
+
 **Provenance warning.** The sandbox this study was run in cannot open journal
 websites (DNS/egress is blocked for `emerginginvestigators.org`, `peerj.com`,
 `pmc.ncbi.nlm.nih.gov`, etc.), so every requirement below was gathered from
@@ -9,7 +59,7 @@ live pages (linked) and the official manuscript template before submitting;
 journals change these rules often (one JEI page we saw was dated Aug 2025,
 another Jan 2022, and the submission fee changed between pages).
 
-## Recommendation
+## Recommendation (superseded)
 
 | Role | Venue | Why |
 |---|---|---|
