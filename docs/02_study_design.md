@@ -105,3 +105,18 @@ parallel jobs.
 * **D1 (pre-production, pilot-driven):** equilibration 30 -> 100 ps because the
   first 100 ps window of the long GPRP runs was biased by ~2.4 kcal/mol.
   Applied to all production jobs alike.
+
+## 7. Note on the dielectric/GBn2 sensitivity check (added after building the
+rescoring code, before Phase C was run)
+Rescoring the existing GPRP and GPR trajectories at solute dielectric 1/2/4
+showed that *absolute* dG for this truncated, capped pocket model is highly
+sensitive to that choice (GPRP: -55.4 / -271.2 / -379.1 kcal/mol at eps =
+1/2/4) -- almost certainly a self-energy artifact of the many charged
+side chains near the ACE/NME-capped shell boundary, not a property of the
+real, uncapped protein. The *sign* of ddG(GPR-GPRP) (GPR weaker, correctly
+matching Laudano & Doolittle 1978) was preserved at all three settings
+(+1.3 / +5.3 / +7.3 kcal/mol), so the Section 3 criterion "unchanged sign on
+rescoring" is retained exactly as originally specified (it was already
+sign-only, never a magnitude match), and this absolute-magnitude instability
+is reported as a limitation of the truncated-receptor GB model rather than
+used to weaken or drop the check.

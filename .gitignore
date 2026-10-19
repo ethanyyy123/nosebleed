@@ -9,4 +9,3 @@ data/_tmp_*
 *.fls
 *.fdb_latexmk
 *.synctex.gz
-data/trajectories/*.npy
