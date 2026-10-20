@@ -1,0 +1,9 @@
+test,comparison,n_test,n_ref,mean_test,mean_ref,ddG,p_one_sided,criterion,passed
+H1a,GPR vs GPRP (6 A),3,6,-51.6774,-55.7698,4.0924,0.0596,ddG>0 and p<0.05,False
+H1b,D364A vs WT (7 A),3,3,-47.3224,-57.9211,10.5988,0.0033,ddG>=3.0 and p<0.05,True
+H1b,D364H vs WT (7 A),3,3,-50.7061,-57.9211,7.2151,0.0105,ddG>=3.0 and p<0.05,True
+H1b,D364V vs WT (7 A),3,3,-47.5685,-57.9211,10.3526,0.0145,ddG>=3.0 and p<0.05,True
+H1c,F293A vs WT (7 A),2,3,-63.6024,-57.9211,-5.6812,,|ddG|<3.0,False
+H1c,S300A vs WT (7 A),2,3,-58.3348,-57.9211,-0.4136,,|ddG|<3.0,True
+H1c,M336A vs WT (7 A),2,3,-59.9081,-57.9211,-1.9869,,|ddG|<3.0,True
+H1c,N337A vs WT (7 A),2,3,-58.0934,-57.9211,-0.1722,,|ddG|<3.0,True

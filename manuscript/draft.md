@@ -1,19 +1,49 @@
 ---
-STATUS: DRAFT IN PROGRESS. Results and Discussion are [PENDING] until Phase A/B/C
-MD runs finish. Nothing in brackets is a real number. Formatted for Reinvention:
-an International Journal of Undergraduate Research (see docs/01 for the format
-rules and their provenance; [VERIFY] against the live style guide before
-submission). Word count excludes title page, abstract, acknowledgements,
-references, appendices per Reinvention's rule.
+STATUS: content-complete first draft. All numbers below are real, computed
+results (data and code: ethanyyy123/nosebleed, branch
+claude/blissful-babbage-xpxq47); nothing is a fabricated placeholder.
+Formatted for Reinvention: an International Journal of Undergraduate Research
+(see docs/01 for the format rules and their provenance -- gathered from
+web-search summaries, not the live pages directly; [VERIFY] against the
+current style guide before submission). Body word count (Introduction +
+Methods + Results + Discussion): 3,651 words (limit 2,000-5,000). Abstract:
+197 words (limit 100-200).
+
+**Still needed from the author before submission** (cannot be filled in from
+here): real name, department/institution, email, title-page formatting; a
+mentor's name for Acknowledgements if applicable; confirmation of eligibility
+("undergraduate, or graduated within the last 6 months") on Reinvention's
+submission checklist; the AI-use disclosure Reinvention's Academic Honesty
+and AI policy requires (drafted here as a plain statement in Acknowledgements
+-- read the live policy and adjust wording/placement as it specifies); and a
+final read-through, since nothing here has been reviewed by a human co-author
+or mentor yet.
 ---
 
-# An ensemble MM/GBSA screen of single-residue fibrin "knob A" peptide variants at fibrinogen hole a: a validated computational pipeline and a candidate-generating saturation scan
+# Why a saturation scan needs validating before it is trusted: a pre-registered MM/GBSA test on fibrin knob-A peptide variants at fibrinogen hole a
 
 **Author:** [NAME] -- [Department], [University] -- [email]
 
 ## Abstract (100-200 words)
 
-[PENDING -- written last, after Results/Discussion are final.]
+Fibrin clot assembly begins when thrombin exposes "knob A" on fibrinogen,
+which docks into "hole a" on a neighbouring molecule; the tetrapeptide
+Gly-Pro-Arg-Pro (GPRP) mimics this interaction and was used to solve the
+pocket's crystal structure. We built a CPU-only, single-trajectory MM/GBSA
+pipeline to screen single-residue GPRP variants for predicted binding to
+hole a, and pre-registered three published findings it had to reproduce
+before any new prediction would be trusted. The pipeline correctly and
+strongly reproduced the central one -- disrupting the pocket's Asp364
+weakens predicted binding (+7 to +11 kcal/mol, p < 0.05) -- but missed a
+statistical-power threshold on a second check and failed a specificity
+control on a third, so a 76-variant saturation scan is reported as
+unvalidated: it is dominated by a known artifact (predicted affinity
+correlates with substituted side-chain size at rho = -0.79, p = 3x10^-17),
+not real chemistry. One exploratory pattern survived that confound --
+every tested substitution at the peptide's arginine position weakened
+binding -- offered as a hypothesis, not a finding. We argue this validate-
+before-trusting workflow, not any single predicted peptide, is this study's
+contribution.
 
 **Keywords:** fibrin, fibrinogen, molecular dynamics, MM/GBSA, knob-hole interaction, peptide design, hemostasis
 
@@ -82,11 +112,12 @@ This is explicitly a computational screening study. No peptide reported here
 has been synthesised or tested experimentally; every number is a model output
 with its own, only partly quantified, systematic error (Methods,
 Limitations). The paper's contribution is not a claim that any specific
-variant *is* a better hemostatic knob, but (a) a reusable, freely available,
-single-CPU pipeline for this class of problem, (b) an explicit, falsifiable
-check of whether that pipeline's outputs track known biology before it is
-trusted on anything new, and (c) a ranked, statistically qualified list of
-candidates for anyone who wants to test them.
+variant *is* a better hemostatic knob -- as the Results and Discussion show,
+this pipeline's raw scan output does not clear its own pre-registered bar
+for that claim -- but (a) a reusable, freely available, single-CPU pipeline
+for this class of problem, and (b) an explicit, falsifiable check of whether
+that pipeline's outputs track known biology before any of them is trusted,
+run and reported honestly regardless of what it found.
 
 ## Methods
 
@@ -96,13 +127,14 @@ Data Bank (PDB), AMBER ff14SB in implicit solvent, and OpenMM 8.6 running on
 protocol, `docs/02_study_design.md`) before any comparison of interest
 (validation panel, saturation scan) was examined; the one deviation made
 *after* seeing pilot data, and why, is logged there. All code, raw per-replicate
-data, and figures are at [repository URL -- GitHub, see Data Availability].
+data, and figures are at https://github.com/ethanyyy123/nosebleed (Data
+Availability).
 
 **Structural template.** The receptor and reference ligand came from PDB entry
 2FIB, a 2.01 A crystal structure of the human fibrinogen γ-module (residues
-143-411) bound to GPRP (Pratt et al., 1997). A pocket model was built by
+143-411) bound to GPRP (Pratt et al., 1997; Figure 1). A pocket model was built by
 keeping every receptor residue with a heavy atom within 6 A of the template
-GPRP, plus the structure's bound Ca²⁺ ion and its direct ligands whenever any
+GPRP, plus the structure's bound Ca2+ ion and its direct ligands whenever any
 of them fell within that shell; the resulting fragments were capped with
 acetyl (ACE) and N-methylamide (NME) groups built from the coordinates of the
 real, now-omitted neighbouring residues, so that no cut carried a spurious
@@ -119,7 +151,7 @@ C-terminus so the peptide mimics a continuing chain rather than a free acid.
 Missing side-chain atoms and all hydrogens were added with PDBFixer at pH 7.4.
 
 **Force field and solvent.** Protein and peptide used AMBER ff14SB (Maier et
-al., 2015); the Ca²⁺ ion used the AMBER/OpenMM Li-Merz parameter set
+al., 2015); the Ca2+ ion used the AMBER/OpenMM Li-Merz parameter set
 distributed with OpenMM's `amber14` force-field files. Solvent was treated
 implicitly with the OBC-II generalized-Born model (Onufriev et al., 2004) as
 implemented natively in OpenMM (`GBSAOBCForce`; interior/exterior dielectric
@@ -130,8 +162,8 @@ hour, which is what makes a several-hundred-variant scan tractable on 4 cores
 discussed explicitly under Limitations.
 
 **Restraints and dynamics.** To keep the truncated receptor stable without a
-full-protein simulation, every receptor Cα atom (and the Ca²⁺ ion) was held by
-a harmonic restraint (1 kcal mol⁻¹ A⁻²); side chains and the entire peptide were
+full-protein simulation, every receptor C-alpha atom (and the Ca2+ ion) was held by
+a harmonic restraint (1 kcal/mol/A^2); side chains and the entire peptide were
 otherwise free. A flat-bottom restraint on the peptide backbone centroid (6 A
 radius, inert inside that radius) prevented the unbound peptide from drifting
 away during the longer anneal step without biasing its pose within the pocket.
@@ -206,43 +238,236 @@ Availability).
 
 ## Results
 
-[PENDING -- awaiting Phase A (validation panel, H1) and Phase B/C (saturation
-scan and confirmation, H2) completion. Planned structure:
-1. Pipeline throughput and pilot convergence (one short paragraph + Table S1).
-2. H1 panel: table of GPR vs GPRP, the three Asp364 mutants vs WT, the four
-   neutral controls vs WT, with means, n, ddG, p-values, and the explicit
-   pass/fail call for each of the three H1 components -- Figure 2.
-3. If and only if H1 is consistent: H2 saturation-scan heatmap (4 positions x
-   19 substitutions, Figure 3), stage-1 candidates, size-bias and gas/solvation
-   diagnostics, and Phase C confirmation table (Figure 4 / Table 2).
-4. If H1 is *not* fully consistent: H2 results are still reported, explicitly
-   labelled unvalidated, with the failing H1 component stated plainly.]
+**Pipeline throughput.** The 6 A pocket model (619 atoms) ran at approximately
+39 ns/day/core on a single CPU core (4 parallel replicates on 4 cores); the
+7 A model used for the Asp364 and specificity-control comparisons (741-857
+atoms) ran somewhat slower. A full validation-plus-scan campaign (29
+validation replicates + 152 scan replicates + one replacement replicate for a
+numerically unstable run, Methods) totalled approximately 230 independent
+100-ps production runs, completed in well under a single CPU-day once summed
+across the 4 available cores.
+
+**H1: the validation panel (Figure 2A).** Of the three pre-registered H1
+components, one passed clearly, one was directionally correct but
+underpowered, and one failed outright -- so by the pre-registered joint rule
+(Methods), H1 is **not** fully consistent with known biology, and the
+saturation scan (H2, below) is accordingly reported as an *unvalidated,
+hypothesis-generating* screen rather than a confirmed ranking.
+
+- *H1b (Asp364) -- passed, strongly.* All three Asp364 substitutions
+  weakened predicted knob-A binding by far more than the pre-set 3.0 kcal/mol
+  threshold, each at p < 0.05 (n = 3 vs 3, one-sided Welch's t): ddG(D364A) =
+  +10.6 kcal/mol (p = 0.003), ddG(D364H) = +7.2 kcal/mol (p = 0.011),
+  ddG(D364V) = +10.4 kcal/mol (p = 0.015). This reproduces the qualitative
+  direction of Bowley et al. (2008) cleanly. It does **not** reproduce their
+  relative ordering: their plasmin-protection assay found partial protection
+  for D364A and none detectable for D364H or D364V, which would predict
+  D364A should be the *least* disruptive of the three -- in this pipeline it
+  is instead the *most* disruptive (ddG 10.6 vs 7.2 and 10.4 kcal/mol). A
+  single-point MM/GBSA score and a solution-phase protection assay are not
+  measuring the same thing, so this is reported as a genuine, unresolved
+  discrepancy rather than something the present data can adjudicate.
+- *H1a (GPR vs GPRP) -- directionally correct, not significant.* The
+  tripeptide scored 4.1 kcal/mol weaker than GPRP, in the direction Laudano
+  and Doolittle (1978) report, but at p = 0.060 (one-sided Welch's t, n = 3
+  vs 6) this misses the pre-set alpha = 0.05 by a small margin. This reads as
+  a real but modest effect that this study's sample size was underpowered to
+  resolve at the pre-registered threshold -- not as evidence against the
+  effect itself.
+- *H1c (specificity controls) -- 3 of 4 passed.* Three of the four neutral,
+  non-contacting residues behaved as predicted (|ddG| < 3.0 kcal/mol): S300A
+  (-0.4), M336A (-2.0), N337A (-0.2). The fourth, F293A, did not: ddG =
+  -5.7 kcal/mol -- i.e. removing a phenylalanine whose side chain sits 6-7 A
+  from the template peptide (Methods; selected by that distance rule *before*
+  any result was seen) is predicted to bind *more* tightly than wild type,
+  well past the no-effect threshold. Phe293 packs against part of the pocket
+  wall rather than the peptide itself (Figure 1B), so one plausible reading
+  is an indirect, pocket-shape effect of removing a large buried aromatic
+  ring that the "distance-from-peptide" selection rule did not anticipate;
+  this study cannot distinguish that from noise in a single truncated-pocket
+  replicate pair (n = 2) and does not claim to.
+
+**H2: the saturation scan is dominated by a known artifact, not validated
+biology (Figure 2B, Figure 3A).** All 76 single-position substitutions of
+GPRP (19 at each of P1, P2, P3, P4; n = 2 replicates each) were scored with
+the identical protocol. The pre-registered size-bias diagnostic (Methods) was
+unambiguous: pooled across all 76 variants, predicted ddG correlates with the
+change in side-chain heavy-atom count at Spearman's rho = -0.79 (p = 3x10^-17);
+a simple linear fit (ddG = 5.8 - 3.24 x d(heavy atoms), r = -0.76, p =
+1.5x10^-15) already accounts for most of the scan's structure. Twenty-seven of
+the 76 variants meet the pre-registered raw "stage-1 candidate" bar (ddG <=
+-3.0 kcal/mol, both replicates <= -2.0, backbone RMSD < 3.0 A from the
+crystal pose) -- but that list is overwhelmingly just "larger or more
+charged side chain" (Figure 3A, P1/P2/P4 rows: predicted affinity increases
+roughly monotonically with size, in both directions from the wild-type
+residue). This is the known failure mode the diagnostic was built to catch
+(Hou et al., 2011; Genheden and Ryde, 2015): single-trajectory MM/GBSA with
+no entropy correction systematically favours larger, more polar substituents
+because it prices their enthalpic burial without pricing the conformational
+entropy they cost. Given this, and given H1's result above, **no candidate
+from this scan is reported as a validated or confirmed tighter binder**; the
+pre-registered Phase C numerical confirmation step (more replicates at a
+larger pocket shell, plus a dielectric/GBn2 sign check) was not run, because
+neither finding it would change (`docs/02_study_design.md`, deviation D3).
+
+**An exploratory (not pre-registered) observation: position 3 is
+structurally special, not just "size-confounded" (Figure 3).** Regressing
+the dominant size trend out of the scan (fitting ddG against the side-chain
+size change and taking the residuals) was not part of the pre-registered
+analysis plan, so what follows is reported explicitly as hypothesis-generating,
+not confirmatory. Every one of the 19 substitutions at P3 -- the position
+occupied by Arg3 in native GPRP, which Figure 1B shows contacting five
+distinct pocket residues within 3.7 A (more than any other peptide position)
+-- scored *worse* than wild type even in the raw, size-confounded data (ddG
+from +8.0 to +32.7 kcal/mol; 19/19 unfavourable), and P3 substitutions'
+residuals after removing the size trend are far above the other three
+positions' (mean residual +10.5 vs -3.5 kcal/mol, Welch's t = 6.7, p =
+2.3x10^-7). In other words: inflating side-chain size helps the raw score
+almost everywhere *except* at P3, where no substitution tested -- however
+large, however chemically similar to arginine -- recovers wild-type-like
+binding. That is consistent with Arg3 occupying a specific, multiply-anchored
+geometric position rather than a generically "chargeable" one, which is the
+one part of this scan's output that lines up with the pocket's known
+structural chemistry (Figure 1B) rather than with the size artifact. It is
+offered as a hypothesis this pipeline is not validated to confirm, not as a
+finding.
 
 ## Discussion
 
-[PENDING -- to cover: (i) interpretation of the H1 outcome and what it does
-and does not license claiming about H2; (ii) for any confirmed H2 candidate,
-what a reasonable next experimental step would look like (e.g. SPR or ITC
-against recombinant fragment D, as in Stabenfeldt et al., 2010); (iii)
-Limitations: implicit solvent and no entropy term (Genheden and Ryde, 2015),
-a single static crystal template and restrained backbone, one force field and
-one GB flavour as primary (partially addressed by the GBn2/dielectric
-sensitivity check on confirmed candidates only), no claim whatsoever about
-hemostatic efficacy, wound biology, or in vivo behaviour of any peptide; (iv)
-why the two other candidate project ideas considered (coarse-grained RADA16
-self-assembly under pH/ionic variation; docking of plant polyphenols against
-plasmin) were not pursued -- summarised from `docs/01_journal_venue_requirements.md`.]
+This project set out to ask two things: whether a cheap, CPU-only MM/GBSA
+pipeline could be trusted to screen single-residue variants of the fibrin
+knob-A peptide, and, if so, what it would find. The honest answer to the
+first question is *not fully* -- and the pre-registered design (Methods;
+`docs/02_study_design.md`) was built specifically so that this could be
+discovered and reported rather than glossed over. Two of three validation
+checks the pipeline needed to clear were only partially met: the GPR-vs-GPRP
+comparison was directionally right but underpowered, and one of four
+specificity controls (F293A) showed a larger-than-allowed effect the
+analysis cannot explain. The one check that passed unambiguously -- that
+disrupting Asp364's negative charge at hole a weakens predicted knob-A
+binding, matching Bowley et al. (2008) -- is also the most mechanistically
+central of the three, which is some reassurance that the pipeline is not
+simply broken, only not precise enough to be trusted on its own for ranking
+individual substitutions.
+
+The saturation scan illustrates exactly why that distinction matters. Taken
+at face value, it names 27 "candidates" predicted to bind hole a more
+tightly than native GPRP. Taken alongside the diagnostic this project
+pre-registered specifically to check for it, that list is explained to first
+order by a single confound -- bigger, more polar side chains score better in
+an MM/GBSA model with no entropy term (Hou et al., 2011; Genheden and Ryde,
+2015) -- and is not reported as a set of real binding predictions. This is
+the central methodological point of the paper: a pipeline that correctly
+recovers a well-documented, mechanistically important result (Asp364) can
+simultaneously produce a long list of plausible-looking "hits" that are
+mostly an artifact, and the only way to tell the two apart is to check,
+in writing, before looking at the result one is tempted to believe. A
+screen like this one is cheap enough to run on a laptop-class CPU in hours;
+the validation and diagnostic steps that make its output interpretable cost
+comparatively little extra and are not optional.
+
+The one pattern that survived this scrutiny -- every substitution tested at
+position 3 (native Arg) weakened predicted binding, including after removing
+the dominant size trend, while no equivalent pattern held at positions 1, 2,
+or 4 -- is offered only as a hypothesis, generated by an analysis that was
+not pre-registered. It happens to line up with what the crystal structure
+already shows (Figure 1B): Arg3 is the peptide's most extensively anchored
+residue, contacting five distinct pocket residues, where the other three
+positions each contact at most two. That internal consistency is
+encouraging, but this study did not pre-register a test of it and is not in
+a position to call it confirmed. A direct experimental follow-up -- SPR or
+ITC titration of fragment D against a small panel of P3 substitutions,
+alongside the existing GPRP and GPR controls, in the style of Stabenfeldt et
+al. (2010) -- is the obvious next step, and is explicitly a suggestion for
+future work, not a result of this paper.
+
+**Limitations.** Every number in this paper is a model output with
+unquantified systematic error, not a measurement. Solvent is implicit
+(OBC-II generalized Born; Onufriev et al., 2004), there is no entropy term,
+and scoring uses a single static crystal template with the receptor backbone
+restrained -- all standard, well-documented limitations of single-trajectory
+MM/GBSA (Genheden and Ryde, 2015) that this paper's own diagnostics show are
+not merely theoretical here. The pocket model is truncated and capped, which
+the dielectric-sensitivity check (`docs/02_study_design.md`, Section 7) shows
+produces large, likely artifactual swings in *absolute* binding energy with
+the interior dielectric constant, even though the *sign* of a known
+comparison (GPR vs GPRP) was stable across that check; absolute energies in
+this paper should not be compared across different receptor-shell sizes or
+dielectric settings for that reason. One force field (ff14SB) and one
+implicit-solvent flavour (OBC-II) were used as primary; GBn2 and alternative
+dielectrics were available in the pipeline (Methods) but, given H1's outcome,
+were not spent on further "confirming" scan candidates that a known artifact
+already explains. No peptide in this paper has been synthesised or tested
+experimentally, and nothing here supports any claim about hemostatic
+efficacy, wound biology, or in vivo behaviour.
+
+**Why this project and not the other two considered.** Two other
+computational project designs were considered before this one (full
+reasoning in `docs/01_journal_venue_requirements.md`): docking plant-derived
+polyphenols against plasmin as a tranexamic-acid alternative, and
+coarse-grained molecular dynamics of the self-assembling peptide RADA16
+under varying pH and ionic strength. The first was set aside because the
+clinically used antifibrinolytics act at the kringle lysine-binding sites,
+not the protease active site, which the originally proposed docking target
+would have missed; the second because RADA16 nanofiber assembly happens on
+timescales and with tooling (coarse-grained force fields, much longer
+simulations) not well matched to a four-CPU-core, no-GPU environment, and
+because simulations of RADA16 variants in varying salt conditions already
+exist in the literature. The knob-A project had the advantage of a
+well-characterised crystallographic system with independently published,
+checkable claims to validate against -- which is precisely what let this
+paper discover, and report, that its own pipeline was not yet good enough to
+trust without that check.
 
 ## Acknowledgements
 
-[PENDING]
+The author thanks [MENTOR/ADVISOR NAME, if any -- PENDING] for guidance, and
+acknowledges that this manuscript and its supporting code were prepared with
+the assistance of an AI coding assistant (Claude, Anthropic), used under the
+author's direction and review throughout data generation, analysis, and
+writing; see Reinvention's Academic Honesty and AI policy
+(`docs/01_journal_venue_requirements.md`) for the disclosure this requires at
+submission.
+
+## Figure Legends
+
+![](../../figures/fig1_pocket.png)
+
+**Figure 1. The hole-a pocket and its contacts with GPRP.** (A) Rendered
+view of fibrinogen gamma-module hole a (PDB 2FIB, 2.01 A) with the bound
+template peptide GPRP (orange sticks); pocket residues coloured by chemistry
+(salmon = Asp, teal = Gln/Lys/His/Arg, sand = Phe/Thr); green sphere =
+structural Ca2+. (B) Heatmap of closest heavy-atom distance (A) between each
+of GPRP's four residues and every receptor residue contacted within 4.2 A;
+column label colour matches panel A's residue-chemistry coding.
+
+![](../../figures/fig2_h1_and_sizebias.png)
+
+**Figure 2. The validation panel and the diagnostic that explains why the
+scan (Figure 3) is not trusted on its own.** (A) ddG (mean, n as labelled)
+for each pre-registered H1 comparison against its own same-shell wild type;
+green = meets its pre-set criterion, red = fails it; shaded band = the
+pre-set |ddG| < 3.0 kcal/mol no-effect threshold used by H1c. (B) The
+pre-registered size-bias diagnostic: predicted ddG for all 76 scanned
+variants (Figure 3) plotted against the change in substituted side-chain
+heavy-atom count, with the ordinary-least-squares fit.
+
+![](../../figures/fig3_scan.png)
+
+**Figure 3. The saturation scan.** (A) Raw predicted ddG (kcal/mol, relative
+to GPRP) for every single substitution at each of GPRP's four positions;
+white-outlined cells mark the wild-type residue at each position. Explicitly
+confounded by the size/charge trend in Figure 2B and not a validated
+ranking. (B) Exploratory only, not pre-registered: ddG residual after
+regressing out that size trend (Figure 2B), sorted ascending; orange bars =
+substitutions at position 3 (native Arg), blue = positions 1, 2 and 4.
 
 ## Data Availability
 
 All code, the pre-registered study design, raw per-replicate results (JSON),
 trajectories, and figures are openly available at
-[GitHub repository URL -- ethanyyy123/nosebleed, branch/release to be pinned
-at submission].
+https://github.com/ethanyyy123/nosebleed [branch/release to be pinned at
+submission].
 
 ## References
 

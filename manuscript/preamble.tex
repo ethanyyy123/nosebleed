@@ -1,0 +1,22 @@
+% Approximate rendering of Reinvention's stated format rules (Arial 11pt,
+% double-spaced, >=2.5cm margins) -- a convenience PDF for review, NOT the
+% required Word/RTF/OpenOffice submission file.
+\usepackage{fontspec}
+\setmainfont{Liberation Sans}  % metric-compatible Arial substitute
+\usepackage[a4paper,margin=2.6cm]{geometry}
+\usepackage{setspace}
+\doublespacing
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{1.4em}{0.6em}
+\titlespacing*{\subsection}{0pt}{1.1em}{0.4em}
+\usepackage{graphicx}
+\usepackage[labelfont=bf,font=small]{caption}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\usepackage[none]{hyphenat}
+\sloppy

@@ -105,6 +105,39 @@ parallel jobs.
 * **D1 (pre-production, pilot-driven):** equilibration 30 -> 100 ps because the
   first 100 ps window of the long GPRP runs was biased by ~2.4 kcal/mol.
   Applied to all production jobs alike.
+* **D2 (post-production, infrastructure):** one Phase B replicate (WPRP,
+  seed 2) crashed with an OpenMM "particle coordinate is NaN" error during
+  production -- a numerical-instability failure (almost certainly a residual
+  steric clash with the bulky Trp side chain surviving the 450 K anneal step),
+  not a result. It was replaced with a new replicate at seed 3, run with the
+  identical frozen protocol, before any scan comparison was examined. WPRP
+  seed 1 (unaffected) was already complete.
+* **D3 (post-Phase-A/B, scope decision, made after seeing both the H1 panel
+  and the scan's own pre-registered size-bias diagnostic, before any Phase C
+  job was built or run):** Phase C (n=6-replicate numerical "confirmation" of
+  stage-1 candidates) was **not run**. Two things were already decided by
+  Section 3's own rules before Phase C would have started: (i) H1 is not
+  fully consistent (H1a marginal at p=0.060 vs the pre-set alpha=0.05; one of
+  the four H1c specificity controls, F293A, exceeds the 3.0 kcal/mol no-effect
+  threshold) -- by the pre-registered rule, this alone routes every scan
+  result to "report as unvalidated," regardless of what Phase C would show;
+  and (ii) the scan's own pre-registered size-bias diagnostic (Methods) found
+  that predicted ddG across the 76-variant scan correlates with the change in
+  side-chain heavy-atom count at Spearman rho=-0.79 (p=3x10^-17, pooled) --
+  i.e. the raw "stage-1 candidate" list (27/76 variants) is explained to a
+  large extent by a known, generic MM/GBSA artifact (larger/more polar side
+  chains score more favourably with no compensating entropy term), not
+  demonstrated to reflect real knob-hole chemistry. Spending several more
+  hours of compute (Phase C's n=6 replicates plus an 8 A shell re-run for
+  each candidate) to add precision to numbers that are already explained by
+  a known confound, on top of a validation panel that did not clear its own
+  bar, was judged not to change the paper's conclusion and not to be a good
+  use of the compute budget. What *was* done with the existing data instead
+  (zero additional simulation): a linear regression of ddG on the size
+  change explains the trend quantitatively (slope -3.24 kcal/mol per added
+  heavy atom, r=-0.76, p=1.5e-15), and the residuals from that regression are
+  reported as an explicitly **exploratory, not pre-registered** observation
+  (Results/Discussion).
 
 ## 7. Note on the dielectric/GBn2 sensitivity check (added after building the
 rescoring code, before Phase C was run)
